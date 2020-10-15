@@ -25,7 +25,8 @@ esac
 
 OBSPROJ="filesystems:ceph:$RELEASE_BRANCH:upstream"
 OBSARCH="x86_64"
-BUILDHOME=/var/tmp/build-root/$OBSREPO-$OBSARCH/home/abuild
+BUILDHOME=$HOME/osc/$OBSREPO-$OBSARCH/home/abuild
+BUILD_ROOT=$BUILDHOME
 
 rm -rf $OBSPROJ
 osc co $OBSPROJ
